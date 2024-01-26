@@ -289,3 +289,29 @@ return val%2===0;
 
   console.log(filtermarks);
 
+
+  // ques -> take a number n as input from user.create an array of number from 1 to n.
+
+  let n = prompt("Enter the nummber: ");// take input by user
+  let userarr=[];
+
+  for(let i=1;i<=n;i++){
+   userarr[i-1]=i;
+  }
+
+  console.log(userarr);
+
+
+ let sumUser=userarr.reduce((res,curr)=>{
+   return res +curr;
+  });
+
+  let prodUser=userarr.reduce((res,curr)=>{
+   return res *curr;
+  });
+
+
+
+ console.log(sumUser);
+ console.log(prodUser);
+
