@@ -9,3 +9,26 @@ button{
     color: antiquewhite;
     background: #6010e0;
 }
+
+.box{
+    height: 100px;
+    width: 100px;
+    background: #801111;
+    padding: 3px;
+    margin: 3px;
+}
+
+.inner{
+    height: 200px;
+    width: 100px;
+    background: #df9321;
+    padding: 3px;
+    margin: 3px;  
+}
+.para{
+ color: rgb(65, 33, 250);   
+}
+
+.newpara{
+    background-color: #df9321;
+}
