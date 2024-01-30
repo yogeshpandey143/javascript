@@ -32,3 +32,8 @@ button{
 .newpara{
     background-color: #df9321;
 }
+.boxer{
+    height: 100px;
+    width: 100px;
+    background-color: hwb(113 5% 51%);
+}
