@@ -117,3 +117,67 @@ mypromise.catch((err)=>{
     console.log("some error messsage",err) 
 })
 
+
+function asyncFunc(){
+
+    return new Promise((resolve,reject)=>
+    setTimeout(()=>
+    {
+       console.log("some data 1");
+       resolve("success!")
+    },4000)
+    )
+}
+
+
+
+
+function asyncFunc2(){
+
+    return new Promise((resolve,reject)=>
+    setTimeout(()=>
+    {
+       console.log("some data 2");
+       resolve("success!")
+    },4000)
+    )
+}
+
+/* data 1 and data 2 fetched simultanuosly after 4 sec */
+// console.log("fetching data 1")
+// let p1 = asyncFunc();
+// p1.then((res)=>{
+//     console.log(res);
+// })
+
+
+// console.log("fetching data 2")
+// let p2 = asyncFunc2();
+// p2.then((res)=>{
+//     console.log(res);
+// })
+
+
+
+/* data 1 and data 2 fetched one after one,  after 4 sec */
+// by using promise chain
+
+
+console.log("fetching data 1")
+let p1 = asyncFunc();
+p1.then((res)=>{
+    console.log(res);
+// promise chaning -> one promise after another
+console.log("fetching data 2")
+let p2 = asyncFunc2();
+p2.then((res)=>{
+    console.log(res);
+})
+
+});
+
+
+// Async-Await
+
+
+
