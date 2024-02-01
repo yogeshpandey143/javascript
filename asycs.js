@@ -180,4 +180,33 @@ p2.then((res)=>{
 // Async-Await
 
 
+async function hello(){
+    console.log("hello");
+}
+
+
+// await -> it pauses the execution of its surrounding async function until the promise is settled
+
+
+
+
+function api(){
+
+   
+   return new Promise((resolve,reject)=>{
+    setTimeout(()=>{
+        console.log("weather data");
+        resolve(200);
+    },2000)
+   
+   }) 
+}
+
+
+// await api(); we cannot call awiat function in this manner
+
+async function getWeatherData(){
+    await api();
+    await api();
+}
 
