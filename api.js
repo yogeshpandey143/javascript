@@ -22,3 +22,4 @@ btn.addEventListener("click",getFact);
 //AJAX is Asynchronous JS And  XML
 
 //JSON is javascript Object Notation 
+
